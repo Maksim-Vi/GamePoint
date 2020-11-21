@@ -7,12 +7,12 @@ module.exports = {
     index: ['@babel/polyfill','./src/index.js']
   },
   output: {
-    path: path.join(__dirname, "/dist"),
+    path: path.join(__dirname, "/build"),
     filename: "[name].bundle.js"
   },
   devtool: "source-map",
  devServer:{
-  contentBase: path.join(__dirname, 'dist'),
+  contentBase: path.join(__dirname, 'build'),
   compress: true,
   port: 3000
  },
